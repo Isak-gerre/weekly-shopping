@@ -9,10 +9,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-dvh flex-col">
-            <header className="flex items-center justify-between border-b px-6 py-3">
-              <div className="font-semibold">Weekly Shopping</div>
-              <ThemeToggle />
-            </header>
             <div className="flex-1">{children}</div>
           </div>
         </ThemeProvider>
@@ -20,4 +16,3 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   );
 }
-
